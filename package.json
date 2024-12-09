@@ -1,11 +1,11 @@
 {
   "name": "fiscal-data-mcp",
   "version": "0.1.0",
-  "author":"Alex Andru <alex@andru.codes>",
+  "author": "Alex Andru <alex@andru.codes>",
   "description": "MCP server for treasury data using mcp-framework",
   "type": "module",
   "bin": {
-    "coincap-mcp": "./dist/index.js"
+    "fiscal-data-mcp": "./dist/index.js"
   },
   "files": [
     "dist"
@@ -16,8 +16,8 @@
     "watch": "tsc --watch"
   },
   "dependencies": {
-    "mcp-framework": "^0.1.0",
-    "@modelcontextprotocol/sdk": "^0.6.0"
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "mcp-framework": "^0.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",

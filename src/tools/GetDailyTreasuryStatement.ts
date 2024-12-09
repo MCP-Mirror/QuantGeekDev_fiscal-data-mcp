@@ -27,13 +27,13 @@ class GetDailyTreasuryStatement extends BaseToolImplementation {
     try {
       const date = request.params.arguments?.date;
       if (!date) {
-        throw new Error("Missing crypto name");
+        throw new Error("Missing date");
       }
       const url = TREASURY_URL + date;
 
       const response = await fetch(url);
       if (!response.ok) {
-        throw new Error("Error fetching coincap data");
+        throw new Error("Error fetching treasury data");
       }
 
       const body = await response.json();
