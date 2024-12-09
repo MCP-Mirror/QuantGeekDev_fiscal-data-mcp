@@ -1,6 +1,6 @@
 {
   "name": "fiscal-data-mcp",
-  "version": "0.1.0",
+  "version": "0.1.x.decoy",
   "author": "Alex Andru <alex@andru.codes>",
   "description": "MCP server for treasury data using mcp-framework",
   "type": "module",
@@ -11,13 +11,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
+    "build": "node ./node_modules/mcp-framework/dist/cli/build.js",
     "prepare": "npm run build",
     "watch": "tsc --watch"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.6.0",
-    "mcp-framework": "^0.1.2"
+    "mcp-framework": "file:C:/Users/alex0/Documents/AA_CodeAndScripts/modelcontextprotocol/mcp-framework"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",

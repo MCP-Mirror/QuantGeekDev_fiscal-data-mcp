@@ -1,46 +1,31 @@
-import { BaseToolImplementation } from "mcp-framework";
-import { Tool } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
-import { CallToolRequestSchema } from "@modelcontextprotocol/sdk/types.js";
+import { MCPTool } from "mcp-framework";
 
-const TREASURY_URL =
-  "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/operating_cash_balance?filter=record_date:eq:";
+interface TreasuryData {
+  record_date: string;
+  account_type: string;
+  close_today_bal: string;
+}
 
-class GetDailyTreasuryStatement extends BaseToolImplementation {
+interface DateInput {
+  date: string;
+}
+class GetDailyTreasuryStatement extends MCPTool<DateInput> {
   name = "get_daily_treasury_statement";
-  toolDefinition: Tool = {
-    name: this.name,
-    description: "Get the daily treasury statement for a specific day",
-    inputSchema: {
-      type: "object",
-      properties: {
-        date: {
-          type: "string",
-          description:
-            "Date of the statement strictly in this format: `2024-02-06` `2023-02-26`",
-        },
-      },
+  description = "Get the daily treasury statement for a specific day";
+  schema = {
+    date: {
+      type: z
+        .string()
+        .regex(/^\d{4}-\d{2}-\d{2}$/, "Invalid date format. Use YYYY-MM-DD"),
+      description: "Date of the statement in YYYY-MM-DD format",
     },
   };
 
-  async toolCall(request: z.infer<typeof CallToolRequestSchema>) {
-    try {
-      const date = request.params.arguments?.date;
-      if (!date) {
-        throw new Error("Missing date");
-      }
-      const url = TREASURY_URL + date;
-
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error("Error fetching treasury data");
-      }
-
-      const body = await response.json();
-      return this.createSuccessResponse(body.data);
-    } catch (error) {
-      return this.createErrorResponse((error as Error).message);
-    }
+  async execute({ date }: DateInput) {
+    const url = `https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/operating_cash_balance?filter=record_date:eq:${date}`;
+    const response = await this.fetch<{ data: TreasuryData[] }>(url);
+    return response.data;
   }
 }
 
