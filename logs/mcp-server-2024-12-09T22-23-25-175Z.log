@@ -1,0 +1,12 @@
+[2024-12-09T22:23:25.176Z] [WARN] Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\package.json'
+[2024-12-09T22:23:25.177Z] [WARN] Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\package.json'
+[2024-12-09T22:23:25.177Z] [INFO] Initializing MCP Server: unnamed-mcp-server@0.0.0
+[2024-12-09T22:23:25.177Z] [DEBUG] Initialized ToolLoader with directory: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools
+[2024-12-09T22:23:25.177Z] [DEBUG] Attempting to load tools from: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools
+[2024-12-09T22:23:25.179Z] [DEBUG] Found files in directory: GetDailyTreasuryStatement.js
+[2024-12-09T22:23:25.179Z] [DEBUG] Checking file GetDailyTreasuryStatement.js: included
+[2024-12-09T22:23:25.179Z] [DEBUG] Attempting to load tool from: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools\GetDailyTreasuryStatement.js
+[2024-12-09T22:23:25.211Z] [DEBUG] Validated tool: get_daily_treasury_statement
+[2024-12-09T22:23:25.211Z] [DEBUG] Successfully loaded 1 tools: get_daily_treasury_statement
+[2024-12-09T22:23:25.211Z] [INFO] Started unnamed-mcp-server@0.0.0 with 1 tools
+[2024-12-09T22:23:25.211Z] [INFO] Available tools: get_daily_treasury_statement

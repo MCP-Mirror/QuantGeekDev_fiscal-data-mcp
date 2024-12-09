@@ -1,0 +1,7 @@
+[2024-12-09T22:18:16.850Z] [WARN] Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\package.json'
+[2024-12-09T22:18:16.851Z] [WARN] Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\package.json'
+[2024-12-09T22:18:16.851Z] [INFO] Initializing MCP Server: unnamed-mcp-server@0.0.0
+[2024-12-09T22:18:16.851Z] [DEBUG] Initialized ToolLoader with directory: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools
+[2024-12-09T22:18:16.851Z] [DEBUG] Attempting to load tools from: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools
+[2024-12-09T22:18:16.852Z] [DEBUG] No tools directory found
+[2024-12-09T22:18:16.853Z] [INFO] Started unnamed-mcp-server@0.0.0 with no tools

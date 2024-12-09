@@ -1,0 +1,20 @@
+[2024-12-09T22:37:24.796Z] [WARN] Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\package.json'
+[2024-12-09T22:37:24.796Z] [WARN] Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\package.json'
+[2024-12-09T22:37:24.796Z] [INFO] Initializing MCP Server: unnamed-mcp-server@0.0.0
+[2024-12-09T22:37:24.796Z] [DEBUG] Initialized ToolLoader with directory: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools
+[2024-12-09T22:37:24.797Z] [DEBUG] Initialized PromptLoader with directory: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\prompts
+[2024-12-09T22:37:24.797Z] [DEBUG] Attempting to load tools from: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools
+[2024-12-09T22:37:24.799Z] [DEBUG] Found files in directory: GetDailyTreasuryStatement.js
+[2024-12-09T22:37:24.799Z] [DEBUG] Checking file GetDailyTreasuryStatement.js: included
+[2024-12-09T22:37:24.799Z] [DEBUG] Attempting to load tool from: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\tools\GetDailyTreasuryStatement.js
+[2024-12-09T22:37:24.831Z] [DEBUG] Validated tool: get_daily_treasury_statement
+[2024-12-09T22:37:24.831Z] [DEBUG] Successfully loaded 1 tools: get_daily_treasury_statement
+[2024-12-09T22:37:24.831Z] [DEBUG] Attempting to load prompts from: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\prompts
+[2024-12-09T22:37:24.832Z] [DEBUG] Found files in directory: TreasuryReport.js
+[2024-12-09T22:37:24.832Z] [DEBUG] Checking file TreasuryReport.js: included
+[2024-12-09T22:37:24.832Z] [DEBUG] Attempting to load prompt from: C:\Users\alex0\Documents\AA_CodeAndScripts\modelcontextprotocol\fiscal-data-mcp\dist\prompts\TreasuryReport.js
+[2024-12-09T22:37:24.834Z] [DEBUG] Validated prompt: daily_treasury_report
+[2024-12-09T22:37:24.834Z] [DEBUG] Successfully loaded 1 prompts: daily_treasury_report
+[2024-12-09T22:37:24.835Z] [INFO] Started unnamed-mcp-server@0.0.0 with 1 tools and 1 prompts
+[2024-12-09T22:37:24.835Z] [INFO] Available tools: get_daily_treasury_statement
+[2024-12-09T22:37:24.835Z] [INFO] Available prompts: daily_treasury_report
