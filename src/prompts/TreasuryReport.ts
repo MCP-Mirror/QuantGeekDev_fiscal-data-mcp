@@ -26,21 +26,7 @@ class TreasuryReport extends MCPPrompt<ReportInput> {
         role: "user",
         content: {
           type: "text",
-          text: `Please use the get_daily_treasury_statement tool to fetch data for ${date} and then format it as a clear report.`,
-        },
-      },
-      {
-        role: "assistant",
-        content: {
-          type: "text",
-          text: "I'll help you generate a treasury report. First, let me fetch the data.",
-        },
-      },
-      {
-        role: "user",
-        content: {
-          type: "text",
-          text: "Thanks. Once you have the data, please format it as a report that starts with 'DAILY TREASURY REPORT:' and includes the date. Break down the operating cash balances by account type, with amounts formatted as currency.",
+          text: `Please use the get_daily_treasury_statement tool to fetch data for ${date} and then format it as a clear report. Once you have the data, please format it as a report that starts with 'DAILY TREASURY REPORT:' and includes the date. Break down the operating cash balances by account type, with amounts formatted as currency`,
         },
       },
       {
